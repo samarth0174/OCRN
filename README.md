@@ -4,10 +4,11 @@ The objective of this work is to convert printed text or handwritten characters 
 
 How to run :
  
- python main.py
- 
-1.You can train the neural network.
-2. You can test neural net with test data.
-3. You need to give path of image -> data/testdata/(image neme)
+<b>python main.py</b>
+ <br>
+<b>
+1.You can train the neural network.<br>
+2. You can test neural net with test data.<br>
+3. You need to give path of image -> data/testdata/(image neme)</b>
 
 
