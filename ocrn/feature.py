@@ -21,7 +21,7 @@ class feature:
 				for j in range(y-c, y+c+1):
 					if i<=9 and i>=0 and j<=9 and j>=0:
 						if array[i,j] < array[x,y] and array[i,j] < array[x,y]-0.2*c:
-							array[i,j]=array[x,y]-0.2*c
+							array[i,j]=array[x,y]-0.1*c - 0.2*c
 	
 	# Returns a Normalized 2D Array from an Input Array. 
 	# normalizeArrayCell is called for all non zero cells
@@ -41,7 +41,8 @@ class feature:
 	@staticmethod
 	def getImageFeatureVector( imagepath):
 		array = feature.getNormalizedImageArray(imagepath)
-		vector = np.resize(array,(1,100))
+		size = (1,100)
+		vector = np.resize(array,size)
 		return vector[0]
 
 
